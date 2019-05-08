@@ -221,8 +221,8 @@ $("#submit").on( "click" , function(event) {
 
     if (result) {
       console.log(newFriend);
-      $.post ("/api/friends", newFriend, function(frombackRes) {
-
+      $.post("/api/friends", newFriend, function(frombackRes) {
+        $('#matchName').text(frombackRes.name)
       })
 
       $('#myModal').modal('toggle'); 
