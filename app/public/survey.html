@@ -33,7 +33,7 @@
             <hr>
             <div class="form-group">
                     <h3>Question1</h3>
-                    <label for="Question1">Q1------</label>
+                    <label for="Question1">Q1. Your mind is always buzzing with unexplored ideas and plans.</label>
                     <select class="form-control" id="Question1">
                       <option selected=>Select an option</option>
                       <option value="1">1(Stroungly Disagree)</option>
@@ -45,7 +45,8 @@
             </div>
             <div class="form-group">
                     <h3>Question2</h3>
-                    <label for="Question2">Q2------</label>
+                    <label for="Question2">Q2. Generally speaking, you rely more on your experience than your imagination.
+                      </label>
                     <select class="form-control" id="Question2">
                       <option selected=>Select an option</option>
                       <option value="1">1(Stroungly Disagree)</option>
@@ -57,7 +58,8 @@
             </div>
             <div class="form-group">
                     <h3>Question3</h3>
-                    <label for="Question3">Q3------</label>
+                    <label for="Question3">Q3.You find it easy to stay relaxed and focused even when there is some pressure.
+                      </label>
                     <select class="form-control" id="Question3">
                       <option selected=>Select an option</option>
                       <option value="1">1(Stroungly Disagree)</option>
@@ -69,7 +71,8 @@
             </div>
             <div class="form-group">
                     <h3>Question4</h3>
-                    <label for="Question4">Q1------</label>
+                    <label for="Question4">Q4. You rarely do something just out of sheer curiosity.
+                      </label>
                     <select class="form-control" id="Question4">
                       <option selected=>Select an option</option>
                       <option value="1">1(Stroungly Disagree)</option>
@@ -81,7 +84,8 @@
             </div>
             <div class="form-group">
                     <h3>Question5</h3>
-                    <label for="Question5">Q5------</label>
+                    <label for="Question5">Q5. People can rarely upset you.
+                      </label>
                     <select class="form-control" id="Question5">
                     <option selected>Select an option</option>
                       <option value="1">1(Stroungly Disagree)</option>
@@ -93,7 +97,8 @@
             </div>
             <div class="form-group">
                     <h3>Question6</h3>
-                    <label for="Question6">Q6------</label>
+                    <label for="Question6">Q6. It is often difficult for you to relate to other people’s feelings.
+                      </label>
                     <select class="form-control" id="Question6">
                      <option selected=>Select an option</option>
                       <option value="1">1(Stroungly Disagree)</option>
@@ -105,7 +110,8 @@
             </div>
             <div class="form-group">
                     <h3>Question7</h3>
-                    <label for="Question7">Q7------</label>
+                    <label for="Question7">Q7. In a discussion, truth should be more important than people’s sensitivities.
+                      </label>
                     <select class="form-control" id="Question7">
                      <option selected>Select an option</option>
                       <option value="1">1(Stroungly Disagree)</option>
@@ -117,7 +123,8 @@
             </div>
             <div class="form-group">
                     <h3>Question8</h3>
-                    <label for="Question8">Q8------</label>
+                    <label for="Question8">Q8. You rarely get carried away by fantasies and ideas.
+                      </label>
                     <select class="form-control" id="Question8">
                       <option selected=>Select an option</option>
                       <option value="1">1(Stroungly Disagree)</option>
@@ -129,7 +136,8 @@
             </div>
             <div class="form-group">
                     <h3>Question9</h3>
-                    <label for="Question9">Q9------</label>
+                    <label for="Question9">Q9. You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+                      </label>
                     <select class="form-control" id="Question9">
                       <option selected>Select an option</option>
                       <option value="1">1(Stroungly Disagree)</option>
@@ -141,7 +149,8 @@
             </div>
             <div class="form-group">
                     <h3>Question10</h3>
-                    <label for="Question10">Q10------</label>
+                    <label for="Question10">Q10. You feel more energetic after spending time with a group of people.
+                      </label>
                     <select class="form-control" id="Question10">
                       <option selected>Select an option</option>
                       <option value="1">1(Stroungly Disagree)</option>
@@ -209,7 +218,7 @@ $("#submit").on( "click" , function(event) {
           $("#Question10").val()
         ]
       }
-      
+
     if (result) {
       console.log(newFriend);
       $.post ("/api/friends", newFriend, function(frombackRes) {
